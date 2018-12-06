@@ -7,10 +7,12 @@ public class Rectangle implements Quadrangle {
     private long length;
     private long width;
 
+    @Override
     public long getWidth() {
         return width;
     }
 
+    @Override
     public long getLength() {
         return length;
     }

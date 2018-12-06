@@ -14,10 +14,12 @@ public class Square implements Quadrangle {
         this.sideLength = sideLength;
     }
 
+    @Override
     public long getWidth() {
         return sideLength;
     }
 
+    @Override
     public long getLength() {
         return sideLength;
     }

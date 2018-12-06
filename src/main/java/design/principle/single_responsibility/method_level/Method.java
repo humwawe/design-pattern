@@ -29,7 +29,6 @@ public class Method {
             //todo something2
         }
 
-
         userName = "hum";
         address = "beijing";
     }
