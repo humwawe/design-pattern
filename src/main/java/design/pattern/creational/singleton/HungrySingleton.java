@@ -5,16 +5,16 @@ package design.pattern.creational.singleton;
  */
 public class HungrySingleton {
     //饿汉式，类加载时就初始化了
-    private final static HungrySingleton hungrySingleton;
+    private final static HungrySingleton HUNGRY_SINGLETON;
 
     static {
-        hungrySingleton = new HungrySingleton();
+        HUNGRY_SINGLETON = new HungrySingleton();
     }
 
     private HungrySingleton() {
     }
 
     public static HungrySingleton getInstance() {
-        return hungrySingleton;
+        return HUNGRY_SINGLETON;
     }
 }
