@@ -2,7 +2,7 @@ package design.pattern.creational.prototype;
 
 /**
  * @author hum
- * 使用clone，二进制流的clone效率较高
+ * 本类为原型，使用clone创建其他需要对象
  */
 public class Mail implements Cloneable {
     private String name;
