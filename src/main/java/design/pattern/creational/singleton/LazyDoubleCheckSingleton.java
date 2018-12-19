@@ -13,7 +13,7 @@ public class LazyDoubleCheckSingleton {
     }
 
     public static LazyDoubleCheckSingleton getInstance() {
-        //不加在这个，也是安全的，不过就跟LazySingleton性质一样了，加锁前检查为了提高性能
+        //不加在这个，就跟LazySingleton性质一样了，加锁前检查为了提高性能
         if (lazyDoubleCheckSingleton == null) {
             synchronized (LazyDoubleCheckSingleton.class) {
                 if (lazyDoubleCheckSingleton == null) {
